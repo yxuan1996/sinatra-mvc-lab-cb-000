@@ -1,5 +1,9 @@
 def PigLatinize
 
+  def initialize
+    self
+  end
+
   def piglatinize(word)
 
     non_pig_latin_words = ["i", "me", "to", "too", "a", "an", "in", "and", "on"]
