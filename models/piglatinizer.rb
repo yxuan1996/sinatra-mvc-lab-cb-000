@@ -1,8 +1,5 @@
 def PigLatinizer
 
-  def initialize
-    
-  end
 
   def piglatinize(word)
 
