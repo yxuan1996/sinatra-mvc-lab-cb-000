@@ -5,13 +5,11 @@ class PigLatinizer
 
     non_pig_latin_words = ["i", "me", "to", "too", "a", "an", "in", "and", "on"]
     vowels = ["a", "e", "i", "o", "u"]
-    answer = nil
 
     if non_pig_latin_words.include?(word)
-      answer = word
+      word
     elsif vowels.include? word[0]
       word << "ay"
-      answer = word
     else
       consonants = ""
       while !vowels.include?(word[0])
@@ -20,7 +18,6 @@ class PigLatinizer
       end
       answer = word + consonants + 'ay'
     end
-    answer
   end
 
 
