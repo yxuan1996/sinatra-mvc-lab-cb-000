@@ -1,6 +1,5 @@
 class PigLatinizer
 
-
   def piglatinize(word)
 
     non_pig_latin_words = ["i", "me", "to", "too", "a", "an", "in", "and", "on"]
@@ -16,7 +15,7 @@ class PigLatinizer
         consonants << word[0]
         word = word.split("")[1..-1].join
       end
-      answer = word + consonants + 'ay'
+      word + consonants + 'ay'
     end
   end
 
